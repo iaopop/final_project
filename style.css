@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+.nav-sec {
+    height: 75px;
+    width: 100%;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.nav-logo{
+    padding-right: 15px;
+}
+
+.nav-container {
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-search{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    border: 1px solid rgb(208, 208, 208);
+}
+
+.nav-search a{
+    padding: 10px;
+}
+
+.nav-search input{
+    border: none;
+    outline: none;
+    width: 240px;
+    padding-left: 5px;
+}
+
+::placeholder{
+    color: rgb(110, 110, 110);
+    font-size: 14px;
+}
+
+.log-bar{
+    align-items: center;
+    justify-content: center;
+}
+
+.log-bar button{
+    color: white;
+    font-size: larger;
+    width: 90px;
+    height: 40px;
+    background-color: rgb(15, 182, 15);
+    border: none;
+    border-radius: 7px;
+}
+
+.btn:hover {
+    background-color: rgb(78, 193, 78);
+    transition: 0.1s;
+}
+
+.nav-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.category-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category-nav li{
+    display: inline;
+    margin-right: 40px;
+}
+
+.category-nav li a{
+    color: black;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+.li a:hover{
+    color: #e02a53;
+}
+
+.ls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown{
+    margin-right: 60px;
+}
+
+.dropbtn {
+    font-size: larger;
+    background-color: white;
+    border: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.ls a{
+    color: black;
+    font-size: larger;
+    text-decoration: none;
+}
+
+.ls a:hover{
+    color: #e02a53;
+}
+
+.main-sec{
+    width: 100%;
+    padding-top: 100px;
+    padding-left: 75px;
+    padding-right: 75px;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner img{
+    border-radius: 20px;
+    height: auto;
+    width: 100%;
+}
+
+.movie-list-container {
+    margin-top: 50px;
+}
+  
+  .movie-list-wrapper {
+    position: relative;
+  }
+  
+  .movie-list {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    /*чекнуть следующие 2 строки*/
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+  }
+  
+  .movie-list-item {
+    margin-right: 30px;
+    position: relative;
+  }
+  
+  .movie-list-item:hover .movie-list-item-img {
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+  }
+
+  .movie-list-item:hover .movie-list-item-title,
+.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-button {
+  opacity: 1;
+}
+
+.movie-list-item-img {
+  transition: all 1s ease-in-out;
+  width: 270px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.movie-list-item-title {
+  padding: 0 10px;
+  font-size: 32px;
+  font-weight: bold;
+  position: absolute;
+  top: 10%;
+  left: 50px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.movie-list-item-desc {
+  padding: 10px;
+  font-size: 14px;
+  position: absolute;
+  top: 30%;
+  left: 50px;
+  width: 230px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.movie-list-item-button {
+  padding: 10px;
+  background-color: #4dbf00;
+  color: white;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  opacity: 0;
+  transition: 1s all ease-in-out;
+}
+
+.movie-list-title.active {
+    color: black;
+  }
