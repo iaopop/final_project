@@ -8,7 +8,7 @@ html,body{
   display:grid;
   height:100%;
   place-items: center; 
-  background-color: rgb(255, 218, 149);  
+  background: linear-gradient(#97ff52, #4dbf00);
 }
 .second{
   max-width: 390px;
@@ -43,13 +43,11 @@ outline: none;
 padding-left: 15px;
 font-size: 18px;
 border-radius: 10px;
-border: solid red 2px;
+border: solid black 2px;
 border-bottom-width: 1px;
 }
 
-.form-inner form .field input:focus{
-  border-color: #fc83bb;
-}
+
 .form-inner form .pass-link{
   margin-top: 5px;
 }
@@ -67,22 +65,26 @@ border-bottom-width: 1px;
 }
 .form-inner form .pass-link a:hover{
   text-decoration: underline;
-  color:red;
+  color:#e02a53;
 }
 .form-inner form .signin-link a:hover{
   text-decoration: underline;
-  color:red;
+  color:#e02a53;
 }
 form .field input[type="submit"]{
-  background-color:rgb(217, 145, 12);
-  color: #000;
-  border: solid rgb(155, 0, 0) 2px;
+  background-color:  #4dbf00;
+  color: white;
+  border: solid rgb(255, 255, 255) 2px;
   font-size: 20px;
   font-weight: 500;
   padding: 0px;
   cursor: pointer;
 }
 
+form .field input[type="submit"]:hover{
+  background-color: rgb(78, 193, 78);
+  transition: 0.1s;
+}
 
 
 
