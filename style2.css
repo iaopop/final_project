@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family:Arial, Helvetica, sans-serif;
+}
+html,body{
+  display:grid;
+  height:100%;
+  place-items: center; 
+  background-color: rgb(255, 218, 149);  
+}
+.second{
+  max-width: 390px;
+  background: #fff;
+  padding:30px;
+  border-radius: 8px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+}
+.second .title-text{
+  display: flex;
+  width:200%;
+}  
+.second .title-text .title{
+  width:50%;
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+.second .form-container{
+  width:100%;
+}
+
+.form-inner form .field{
+    height: 50px;
+    width:100%;
+    margin-top:20px;
+}
+.form-inner form .field input{
+height: 100%;
+width:100%;
+outline: none;
+padding-left: 15px;
+font-size: 18px;
+border-radius: 10px;
+border: solid red 2px;
+border-bottom-width: 1px;
+}
+
+.form-inner form .field input:focus{
+  border-color: #fc83bb;
+}
+.form-inner form .pass-link{
+  margin-top: 5px;
+}
+.form-inner form .pass-link a{
+  color:blue;
+  text-decoration:none;
+}
+.form-inner form .signin-link a{
+  color: blue;
+  text-decoration:none;
+}
+.form-inner form .signin-link{
+  text-align: center;
+  margin-top: 10px;
+}
+.form-inner form .pass-link a:hover{
+  text-decoration: underline;
+  color:red;
+}
+.form-inner form .signin-link a:hover{
+  text-decoration: underline;
+  color:red;
+}
+form .field input[type="submit"]{
+  background-color:rgb(217, 145, 12);
+  color: #000;
+  border: solid rgb(155, 0, 0) 2px;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0px;
+  cursor: pointer;
+}
+
+
+
+
+
+
