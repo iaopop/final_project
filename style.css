@@ -489,3 +489,48 @@ body{
     background-color: rgb(78, 193, 78);
     transition: 0.1s;
 }
+
+.main{
+    align-items: center;
+  }
+  
+  .title{
+      text-align: center;
+  }
+  
+  .text{
+      padding: 7px ;
+      text-align: center;
+      
+  }
+  .imgfilm{
+      width:300px;
+      transition:  .2s linear;
+      position: relative;
+  }
+  
+  .films {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin-top: 25px;
+      margin-bottom: 25px;
+  }
+  
+  .film1{
+      position: relative;
+      border:solid 4px black;
+      margin-left:30px;
+  }
+  
+
+
+.ticket{
+    align-items: center;
+    border-radius: 7% ;
+    background-color: rgb(62, 127, 218);
+    color:white;
+    text-decoration: none;
+
+}
